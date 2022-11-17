@@ -221,8 +221,66 @@
        ```
  <!-------------------------------------------------------------Part 3------------------------------------------------------------------------------------------>
 ## 4. 서버 코드 설명
-   * 설명  
-        ```SQL ```
+### DB 테이블 생성 부분</br>
+   * 결제 정보를 저장하는 결제정보 테이블과 좌석 현황을 알려 주는 테스트 테이블을 생성
+        ```SQL
+        CREATE TABLE 테스트
+        (
+        좌석번호 INT(10) PRIMARY KEY, -- 기본키 설정
+        좌석유무 CHAR(1) CHECK(좌석유무 = '유' OR 좌석유무 = '무'),
+        사용자명 INT(20), # 기본 상태 NULL
+        만료시간 DATETIME, # 기본 상태 NULL
+        잔여시간 TIME # 기본 상태 NULL
+        );
+        
+        CREATE TABLE 결제정보
+        (
+        사용자명 INT(20) NOT NULL,
+        좌석번호 INT(10) NOT NULL,
+        금액 INT(20) NOT NULL,
+        구매시간 INT(10) NOT NULL,
+        결제시간 DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP # 데이터가 삽입된 시간 삽입
+        );
+        ```
+### 테스트 DB 초기 데이터 삽입 부분</br>
+   * 존재하는 좌석 번호와 초기의 좌석 현황 내역을 삽입
+        ```SQL
+        insert into 테스트(좌석번호, 좌석유무) values ('1', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('2', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('3', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('4', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('5', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('6', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('7', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('8', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('9', '무');
+        insert into 테스트(좌석번호, 좌석유무) values ('10', '무'); #각각의 좌석의 사용 유무를 '무'로 삽입
+        ```
+### 잔여 시간 갱신 부분</br>
+   * 1초마다 진행하는 이벤트를 만들어서 1초마다 잔여 시간을 갱신
+        ```SQL
+        DROP EVENT IF EXISTS event_manage;
+        CREATE EVENT event_manage
+            ON SCHEDULE every 1 second #1초마다 갱신하는 이벤트
+            STARTS current_timestamp() #만든 시간부터 이벤트 시작
+            COMMENT '잔여 시간 갱신 이벤트'
+            DO
+              UPDATE 테스트 SET 잔여시간 = TIMEDIFF(만료시간, NOW()) WHERE 만료시간 IS NOT NULL;
+        ```
+### 시간 만료 시 좌석 현황 변경 부분</br>
+   * 1초마다 진행하는 이벤트를 만들어서 1초마다 만료 시간을 파악하여 만료 시간일 시에</br>
+     좌석 현황을 '무'로 수정하고, 사용자 명, 만료 시간, 잔여 시간을 NULL로 변경
+        ```SQL
+        DROP EVENT IF EXISTS event_manage2;
+        CREATE EVENT event_manage2
+           ON SCHEDULE every 1 second
+           STARTS current_timestamp()
+           COMMENT '1'
+           DO
+             UPDATE 테스트 SET 좌석유무 = '무', 잔여시간 = NULL, 만료시간 = NULL, 사용자명 = NULL WHERE 만료시간 = NOW();
+        ```
+        
+        
 
  <!-------------------------------------------------------------Part 5------------------------------------------------------------------------------------------>
 ## 5. 문제점 및 향후 발전 계획
