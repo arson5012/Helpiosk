@@ -72,7 +72,7 @@
     
  3. __핵심 내용 설명__  
    
-    NFC Tag  
+    NFC(Near Field Communication)  
     > 10 cm 이내의 근거리에서 무선 데이터를 주고받는 통신 기술  
     > 결제 및 도어락 등에 사용하고 있다
 
