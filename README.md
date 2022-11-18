@@ -70,7 +70,8 @@
     <a href="https://youtu.be/jkgIGHYmFuQ" target="_blank">유튜브</a>
     
     
- 3. __핵심 내용 설명__
+ 3. __핵심 내용 설명__  
+   
     NFC Tag  
     > 10 cm 이내의 근거리에서 무선 데이터를 주고받는 통신 기술  
     > 결제 및 도어락 등에 사용하고 있다
