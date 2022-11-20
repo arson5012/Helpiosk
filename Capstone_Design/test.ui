@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>702</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>한컴 고딕</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+background:#a79c8e;
+}
+#out_line{
+border-radius: 10px;
+padding: 2px;
+background-color:#eb9f9f;
+color:#534847;
+}
+#on_line{
+border-radius: 10px;
+padding: 2px;
+background-color:#eb9f9f;
+color:#534847;
+}
+#ex_line{
+border-radius: 10px;
+padding: 2px;
+background-color:#eb9f9f;
+color:#534847;
+}
+#toolbtn{
+background-color:#eb9f9f;
+border-radius:60px;
+}
+#time_label{
+border-radius: 10px;
+padding: 2px;
+background:#f1bbba;
+color:#534847;
+}
+#widget{
+background:#FDF5E6;
+}
+#fontsize{
+border-radius: 10px;
+padding: 2px;
+background:gainsboro;
+}
+#location_label{
+border-radius: 10px;
+padding: 2px;
+}</string>
+      </property>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>1041</width>
+         <height>1881</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>한컴 고딕</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QLabel" name="time_label">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>10</y>
+          <width>451</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>한컴 고딕</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>시간 출력</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ex_line">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>960</y>
+          <width>600</width>
+          <height>300</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>한컴 고딕</family>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>연장</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="on_line">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>590</y>
+          <width>600</width>
+          <height>300</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>한컴 고딕</family>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>입실</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_line">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>1330</y>
+          <width>600</width>
+          <height>300</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>한컴 고딕</family>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>퇴실</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>230</y>
+          <width>631</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>한컴 고딕</family>
+          <pointsize>100</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#FDF5E6;
+color:#534847;</string>
+        </property>
+        <property name="text">
+         <string>HELPIOSK</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

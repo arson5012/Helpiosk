@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="backB">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>680</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>한컴 고딕</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>뒤로가기</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1061</width>
+     <height>1901</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>702</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>한컴 고딕</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background:#a79c8e;
+}
+#widget{
+background:#FDF5E6;
+}</string>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1041</width>
+      <height>1881</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>한컴 고딕</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:#eb9f9f;
+	border-radius: 5px ;
+	border: 1px solid;
+
+	border-color:#534847;  
+};
+</string>
+    </property>
+    <widget class="QPushButton" name="pButton_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>820</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>3번 좌석</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_4">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>1080</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>4번 좌석</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="backB_2">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>1770</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>뒤로가기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>560</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>2번 좌석</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_5">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>1340</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>5번 좌석</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_1">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>300</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>1번 좌석</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>30</y>
+       <width>261</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>35</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:none;
+color:#534847;</string>
+     </property>
+     <property name="text">
+      <string>좌석 선택</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_7">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>560</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>7번 좌석</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_6">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>300</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>6번 좌석</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_8">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>820</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>8번 좌석</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_10">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>1340</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>단체석 B</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pButton_9">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>1080</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>한컴 고딕</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>단체석 A</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
